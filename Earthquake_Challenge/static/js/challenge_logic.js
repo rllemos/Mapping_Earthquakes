@@ -141,7 +141,9 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geoj
       return "#ea2c2c";
     }
     if (magnitude > 4) {
-      return "#eecc00";
+
+      return "#ee9c00";
+
     }
        return "#d4ee00";
     }
@@ -158,14 +160,19 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geoj
   // sets the style of the circle, and displays the magnitude and location of the earthquake
   //  after the marker has been created and styled.
   L.geoJson(data, {
-    // We turn each feature into a circleMarker on the map.
+
+    // Turn each feature into a circleMarker on the map.
+
+
     pointToLayer: function(feature, latlng) {
         console.log(data);
         return L.circleMarker(latlng);
       },
-    // We set the style for each circleMarker using our styleInfo function.
+
+    // Style each circleMarker using our styleInfo function.
     style: styleInfo,
-    //Dispaly magnituted and location of earthquake
+    //Dispaly magnituted and location of earthquake with popup.
+
     onEachFeature: function(feature, layer) {
       layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
     }

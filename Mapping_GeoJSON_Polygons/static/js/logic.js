@@ -34,7 +34,9 @@ L.control.layers(baseMaps).addTo(map);
 // Accessing the Toronto airline routes GeoJSON URL.
 
 
+
 let torontoHoods = "https://raw.githubusercontent.com/rllemos/Mapping_Earthquakes/main/torontoNeighborhoods.json";
+
 
 // Create a style for the lines.
 let myStyle = {
@@ -44,6 +46,7 @@ let myStyle = {
 }
 
 // Grabbing our GeoJSON data.
+
 d3.json(torontoHoods).then(function (data) {
     console.log(data);
     // Creating a GeoJSON layer with the retrieved data.
@@ -56,4 +59,5 @@ d3.json(torontoHoods).then(function (data) {
         }
     })
         .addTo(map);
+
 });

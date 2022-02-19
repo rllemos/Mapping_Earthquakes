@@ -17,7 +17,11 @@ Link to Mapping_Earthquakes:
 A map that has three views: Streets, Satellite and Dark. 
 The map also contains three layers that can filter the data : All Earthquakes, Tectonic Plates and Major Earthquakes.
 
+
+
 ![](Images/Screen Shot 2022-02-19 at 09.57.12.png)
+
+
 
 ![](Images/Screen Shot 2022-02-19 at 09.57.19.png)
 

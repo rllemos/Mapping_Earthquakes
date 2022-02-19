@@ -18,13 +18,6 @@ A map that has three views: Streets, Satellite and Dark.
 The map also contains three layers that can filter the data : All Earthquakes, Tectonic Plates and Major Earthquakes.
 
 
-
-![](Images/Screen Shot 2022-02-19 at 09.57.12.png)
-
-
-
-![](Images/Screen Shot 2022-02-19 at 09.57.19.png)
-
 ## Summary
 
 Each earthquake is represented by a circle marker with color that corresponds to magnitude. In other words the higher the magnitude the darker the color and the larger the diameter. Each circle marker once clicked has a popup marker that shows the magnitude and the location of the earthquake.
